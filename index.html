@@ -16,12 +16,13 @@
             // if(isNaN(e1) || isNaN(e2)){
                 // return alert("数字をいれてください")
             // }
-            if(isNaN(e1)){
+            if(isNaN(e1) || isNaN(e2)){
                 return alert("数字をいれてください")
             }
             const f1 = new bigDecimal(e1)
             // const f1 = new bigDecimal(Math.abs(e1));
             const f2 = new bigDecimal(e2);
+
             switch (op) {
                 case 'plus':
                     return decimalPointCalculate(f1.add(f2), decimalPoint)
