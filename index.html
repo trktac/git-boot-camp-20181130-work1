@@ -22,7 +22,8 @@
 
             // var f1 = bigDecimal(e1)
             const f1 = new bigDecimal(Math.abs(e1));
-            const f2 = new bigDecimal(Math.abs(e2));
+            const f2 = new bigDecimal(e2);
+
             switch (op) {
                 case 'plus':
                     return decimalPointCalculate(f1.add(f2), decimalPoint)
